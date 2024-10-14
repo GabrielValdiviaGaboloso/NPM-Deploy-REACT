@@ -21,7 +21,7 @@ export const useProduct = ({onChange,product,value= 0, initialValue }:useProuctA
 
     const isMounted = useRef(false)
    
-    console.log(initialValue?.count);
+    //console.log(initialValue?.count);
     
 
     const increaseBy = (value:number) =>{

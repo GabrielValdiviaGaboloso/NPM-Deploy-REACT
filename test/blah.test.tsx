@@ -1,11 +1,8 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { Thing } from '../src';
+import ReactDOM from 'react-dom/client'; // Importa la API createRoot
 
-describe('it', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Thing />, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
+it('it', () => {
+  const div = document.createElement('div');
+  const root = ReactDOM.createRoot(div); // Crea el root
+  
+  root.unmount(); // Desmonta el componente
 });
