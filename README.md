@@ -13,7 +13,6 @@ import {ProductCard,ProductImage,ProductTitle,ProductButtons} from 'gv-product-c
 
 ```
    <ProductCard
-        key={product.id}
         product={product}
        
         initialValue={{
